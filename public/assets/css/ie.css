@@ -1,0 +1,55 @@
+.lt-ie9 .logo {
+    width: 400px;
+    height: 95px;
+}
+
+.lt-ie9 .project {
+    border: none;
+}
+
+.lt-ie9 .description {
+    height: 12em;
+}
+
+.lt-ie8 .tag,
+.lt-ie8 .social-section,
+.lt-ie8 .project {
+    display: inline;
+    zoom: 1;
+}
+
+.lt-ie8 .image {
+    width: 350px;
+    height: 210px;
+}
+
+.lt-ie8 .project {
+    width: 350px;
+}
+
+.lt-ie8 .github,
+.lt-ie8 .twitter,
+.lt-ie8 .linked-in {
+    background-image: url( '../img/ieSprite.png' );
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.lt-ie8 .github {
+    width: 26px;
+    height: 26px;
+    background-position: -52px 0;
+}
+
+.lt-ie8 .twitter {
+    width: 26px;
+    height: 26px;
+    background-position: 0 0;
+}
+
+.lt-ie8 .linked-in {
+    width: 26px;
+    height: 26px;
+    background-position: -26px 0;
+}
+

@@ -1,0 +1,14 @@
+.footer {
+    width: 100%;
+    padding: 0 1em;
+    text-align: center;
+}
+
+.social {
+    margin-bottom: 1.4em;
+}
+
+.social-section {
+    display: inline-block;
+    margin: 0 .4em;
+}

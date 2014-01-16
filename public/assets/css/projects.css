@@ -1,0 +1,50 @@
+.projects-container {
+    margin: 3em 0 0em;
+    text-align: center;
+}
+
+.image {
+    display: block;
+    margin-bottom: 1em;
+    border-radius: .4em;
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    max-height: 210px;
+}
+
+.image-link {
+    display: block;
+}
+
+.description {
+    text-align: left;
+    padding-bottom: 1em;
+}
+
+.project {
+    vertical-align: top;
+    display: inline-block;
+    max-width: 350px;
+    margin: 1em 1em 2em;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.tags {
+    text-align: left;
+    margin-bottom: 3em;
+}
+
+.tag {
+    border-radius: .4em;
+    background-color: #4db8e3;
+    color: #fff;
+    padding: 0 .5em;
+    margin: .4em .1em;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.project-link {
+    display: block;
+}

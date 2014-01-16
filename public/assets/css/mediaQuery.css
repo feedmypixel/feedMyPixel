@@ -1,0 +1,11 @@
+/* 781px/16px = 48.813em */
+@media all and (min-width: 48.813em) {
+
+    .project {
+        border: none;
+    }
+
+    .description {
+        height: 12em;
+    }
+}

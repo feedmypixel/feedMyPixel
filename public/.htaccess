@@ -1,0 +1,30 @@
+SetEnv APPLICATION_ENVIRONMENT development
+
+RewriteEngine On
+
+#VARIOUS
+DirectoryIndex index.php
+Options -Indexes
+Options +FollowSymlinks
+
+# ETAGS
+FileETag None
+
+#MOD_EXPIRES and MOD_HEADERS
+# Turn on Expires and set default to 20 years
+ExpiresActive On
+ExpiresDefault "access plus 20 years"
+
+# Set up caching for 20 years
+<FilesMatch "\.(ico|png|html|css|js|php)$">
+ExpiresDefault "access plus 20 years"
+Header append Cache-Control "public"
+</FilesMatch>
+
+# MOD_DEFLATE
+#This would compress all files except images (gif, jpg, png, flv and swf), already compressed files (like zip and tar.gz) and PDF files which makes sense because you do not gain much by compressing these file types.
+<ifmodule mod_deflate.c>
+SetOutputFilter DEFLATE
+SetEnvIfNoCase Request_URI \.(?:png)$ \
+    no-gzip dont-vary
+</ifmodule>

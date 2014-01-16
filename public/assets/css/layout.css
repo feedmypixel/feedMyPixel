@@ -1,0 +1,17 @@
+.page-container {
+    padding: 1em .4em;
+    min-width: 19.688em; /* 315px/16px = 19.688em */
+}
+
+.outside-viewport-text {
+    text-indent: -624.938em;
+    display: none;
+}
+
+.group:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
