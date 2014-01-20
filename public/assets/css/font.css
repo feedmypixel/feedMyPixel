@@ -9,6 +9,7 @@
 	font-style: normal;
 }
 
+.jsfiddle,
 .github,
 .linked-in,
 .twitter {
@@ -26,11 +27,17 @@
 .github:before {
 	content: '\e600';
 }
+
 .linked-in:before {
 	content: '\e601';
 }
+
 .twitter:before {
 	content: '\e602';
+}
+
+.jsfiddle:before {
+	content: '\e603';
 }
 
 a.icon,
@@ -52,4 +59,8 @@ a.linked-in {
 
 a.twitter {
     color: #00aced;
+}
+
+a.jsfiddle {
+    color: #2795ee;
 }

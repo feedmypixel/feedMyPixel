@@ -85,6 +85,7 @@
                 </div>
                 <ul class="tags font-11pt">
                     <li class="tag">Vanilla Js</li>
+                    <li class="tag">OOCSS</li>
                     <li class="tag">Php</li>
                     <li class="tag">Responsive</li>
                     <li class="tag">Design</li>
@@ -159,9 +160,12 @@
                 <li class="social-section">
                     <a href="https://github.com/feedmypixel" target="_blank" class="icon github font-30pt"></a>
                 </li>
+                <li class="social-section">
+                    <a href="http://jsfiddle.net/user/chidge/fiddles/" target="_blank" class="icon jsfiddle font-30pt"></a>
+                </li>
             </ul>
 
-            <a href="mailto:hello&#64;feedmypixel.com" class="font-13pt" title="contact feedMyPixel">hello&#64;feedMyPixel.com</a>
+            <a href="mailto:hi&#64;feedmypixel.com" class="font-13pt" title="contact feedMyPixel">hi&#64;feedMyPixel.com</a>
 
             <p class="font-11pt">
              <?php

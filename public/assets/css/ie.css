@@ -27,12 +27,19 @@
     width: 350px;
 }
 
+.lt-ie8 .jsfiddle,
 .lt-ie8 .github,
 .lt-ie8 .twitter,
 .lt-ie8 .linked-in {
     background-image: url( '../img/ieSprite.png' );
     background-repeat: no-repeat;
     display: block;
+}
+
+.lt-ie8 .jsfiddle {
+    width: 30px;
+    height: 26px;
+    background-position: -78px 0;
 }
 
 .lt-ie8 .github {
