@@ -28,3 +28,7 @@ SetOutputFilter DEFLATE
 SetEnvIfNoCase Request_URI \.(?:png)$ \
     no-gzip dont-vary
 </ifmodule>
+
+
+
+AddType application/x-web-app-manifest+json .webapp
