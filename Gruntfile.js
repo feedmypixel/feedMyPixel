@@ -80,6 +80,7 @@ module.exports = function(grunt) {
                         '<%= dirs.dist.img %>**/*.{png,jpg,gif,svg}',
                         '<%= dirs.dist.font %>*.{eot,svg,ttf,woff}',
                         '<%= dirs.dist.css %>*',
+                        '<%= dirs.dist.js %>*',
                         '<%= dirs.dist.root %>*.{ico}'
                     ]
                 }]
@@ -95,11 +96,14 @@ module.exports = function(grunt) {
 
             html: {
 
-                src: '<%= dirs.dist.root %>index.php',
+                src: [ '<%= dirs.dist.root %>index.php' ],
 
                 options: {
 
-                    assetsDirs: '<%= dirs.dist.assets %>'
+                    assetsDirs: [
+                        '<%= dirs.dist.root %>',
+                        '<%= dirs.dist.assets %>'
+                    ]
                 }
             },
 
@@ -108,15 +112,18 @@ module.exports = function(grunt) {
                 src: '<%= dirs.dist.css %>*.css'
             },
 
-            webapp: '<%= dirs.dist.root %>manifest.webapp',
-            options: {
-                assetsDirs: '<%= dirs.dist.img %>',
-                patterns: {
-                    webapp: [
-                        [/(icon-.*\.png)/, 'Replacing reference to icons']
-                    ]
+            webapp: {
+                src: '<%= dirs.dist.root %>manifest.webapp',
+                options: {
+                    assetsDirs: '<%= dirs.dist.img %>',
+                    patterns: {
+                        webapp: [
+                            [/(icon-.*\.png)/, 'Replacing reference to icons']
+                        ]
+                    }
                 }
             }
+
         },
 
         replace: {

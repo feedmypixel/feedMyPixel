@@ -44,9 +44,11 @@
     <link rel="stylesheet" type="text/css" href="assets/css/font.css">
     <link rel="stylesheet" type="text/css" href="assets/css/projects.css">
     <link rel="stylesheet" type="text/css" href="assets/css/type.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/button.css">
     <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
     <link rel="stylesheet" type="text/css" href="assets/css/mediaQuery.css">
     <link rel="stylesheet" type="text/css" href="assets/css/ie.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/display.css">
     <!-- endbuild -->
 
     <title>feedMyPixel</title>
@@ -70,6 +72,7 @@
         <div class="header group">
             <h1 class="outside-viewport-text">Ben Chidgey | feedMyPixel</h1>
             <img class="logo" src="assets/img/feedmypixel.jpg" alt="feedMyPixel Ltd" />
+            <button id="install-btn" class="cta cta--firefox-os font-16pt hide">Install app</button>
         </div>
         <ul class="projects-container group">
             <li class="project group">
@@ -183,5 +186,6 @@
             <p class="font-9pt">feedMyPixel Ltd is a company registered in England and Wales. Company number. 8198085</p>
             <p class="font-9pt">VAT Registration Number 152 0607 46</p>
         </div>
+        <script type="text/javascript" src="assets/js/firefoxOsInstall.js"></script>
     </body>
 </html>
