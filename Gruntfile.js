@@ -95,21 +95,27 @@ module.exports = function(grunt) {
 
             html: {
 
-                src: [ '<%= dirs.dist.root %>index.php' ],
+                src: '<%= dirs.dist.root %>index.php',
 
                 options: {
 
-                    assetsDirs: [
-
-                        '<%= dirs.dist.root %>',
-                        '<%= dirs.dist.assets %>'
-                    ]
+                    assetsDirs: '<%= dirs.dist.assets %>'
                 }
             },
 
             css: {
 
                 src: '<%= dirs.dist.css %>*.css'
+            },
+
+            webapp: '<%= dirs.dist.root %>manifest.webapp',
+            options: {
+                assetsDirs: '<%= dirs.dist.img %>',
+                patterns: {
+                    webapp: [
+                        [/(icon-.*\.png)/, 'Replacing reference to icons']
+                    ]
+                }
             }
         },
 
