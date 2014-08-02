@@ -186,8 +186,14 @@
             <p class="font-9pt">feedMyPixel Ltd is a company registered in England and Wales. Company number. 8198085</p>
             <p class="font-9pt">VAT Registration Number 152 0607 46</p>
         </div>
-        <!-- build:css assets/js/fmp.js -->
+        <!-- build:js assets/js/fmp.js -->
+        <script type="text/javascript" src="assets/js/fmp.js"></script>
         <script type="text/javascript" src="assets/js/firefoxOsInstall.js"></script>
         <!-- endbuild -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+                fmp.firefoxOs.init();
+            }, false);
+        </script>
     </body>
 </html>
