@@ -1,0 +1,13 @@
+{
+  "name": "fMP",
+  "description": "feedMyPixel.com",
+  "launch_path": "/",
+  "icons": {
+    "128": "/assets/img/icon-128.png"
+  },
+  "developer": {
+    "name": "Ben Chidgey",
+    "url": "http://www.feedmypixel.com"
+  },
+  "default_locale": "en"
+}
