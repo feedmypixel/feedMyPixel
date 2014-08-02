@@ -1,0 +1,14 @@
+.cta {
+    border-radius: .6em;
+    background-color: #8de34d;
+    padding: 1em;
+    color: #ffffff;
+    border: none;
+    font-weight: bold;
+    min-width: 10em;
+}
+
+.cta--firefox-os {
+    margin: 2em auto 0;
+    display: block;
+}
